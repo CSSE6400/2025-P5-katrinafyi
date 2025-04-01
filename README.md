@@ -10,4 +10,6 @@ including how to run it.
 
 There are [resources](https://www.makeareadme.com) available to help you write a good README file.
 
-
+```
+export TF_VAR_database_password=fdsa
+```
