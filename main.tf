@@ -117,7 +117,7 @@ resource "aws_ecs_task_definition" "taskoverflow" {
     "environment": [
       {
        "name": "SQLALCHEMY_DATABASE_URI",
-       "value": "postgresql://${local.database_username}:${local.database_password}@${aws_db_instance.taskoverflow_database.address}:${aws_db_instance.taskoverflow_database.port}/${aws_db_instance.taskoverflow_database.db_name}"
+       "value": "postgresql://${local.database_username}:${var.database_password}@${aws_db_instance.taskoverflow_database.address}:${aws_db_instance.taskoverflow_database.port}/${aws_db_instance.taskoverflow_database.db_name}"
       }
     ],
     "logConfiguration": {
